@@ -14,3 +14,5 @@ print ('Bem vindo,', nome)
 
 name = input('por favor, digite seu nome: ')
 print('Olá ' + name + '! Bem-Vindo ao Python!')
+
+print("É uma função pra imprimir na tela!")
