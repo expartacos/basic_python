@@ -39,3 +39,11 @@ fruta = 'banana'
 print(fruta)
 print(fruta.rjust(20))
 print(fruta.center(20, '-'))
+
+# Docstrings
+texto = """
+Essa é uma string
+de multiplas linhas
+    Respeita deslocamento do texto e é multilnhas 
+"""
+print(texto)
