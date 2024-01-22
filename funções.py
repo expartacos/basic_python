@@ -20,15 +20,15 @@
 # c = mult(a, b)
 # print(c)
 
-def div(x, y):
-    if y != 0:
-        return x/y
-    else:
-        return 'Erro'
+# def div(x, y):
+#     if y != 0:
+#         return x/y
+#     else:
+#         return 'Erro'
     
-if __name__ == '__main__':
-    a = int(input('Primeiro valor: '))
-    b = int(input('Segundo valor: '))
+# if __name__ == '__main__':
+#     a = int(input('Primeiro valor: '))
+#     b = int(input('Segundo valor: '))
 
-    c = div(a, b)
-    print(f'{a} dividido por {b} é = {c}')
+#     c = div(a, b)
+#     print(f'{a} dividido por {b} é = {c}')
