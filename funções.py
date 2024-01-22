@@ -32,3 +32,14 @@
 
 #     c = div(a, b)
 #     print(f'{a} dividido por {b} é = {c}')
+
+def quadrado(val):
+    quadrados = []
+    for x in val: 
+        quadrados.append(x ** 2)
+    return quadrados
+if __name__ == '__main__':
+    valores = [1, 2, 3, 4, 5]
+    resultados = quadrado(valores)
+    for g in resultados:
+        print(g)
