@@ -38,8 +38,13 @@ def quadrado(val):
     for x in val: 
         quadrados.append(x ** 2)
     return quadrados
+
+def contar(num=11, caractere ='0-'):
+    for i in range(1, num):
+        print(caractere)
 if __name__ == '__main__':
-    valores = [1, 2, 3, 4, 5]
-    resultados = quadrado(valores)
-    for g in resultados:
-        print(g)
+    # valores = [1, 2, 3, 4, 5]
+    # resultados = quadrado(valores)
+    # for g in resultados:
+    #     print(g)
+    contar(num=9, caractere='*')
