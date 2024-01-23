@@ -6,6 +6,8 @@
 var_global = 'Global' # Variável global
 
 def escreve_texto():
+    global var_global
+    var_global = 'Banco de dados com SQL'
     var_local = 'Local' # Variável local
     print(f'Variável local: {var_local}')
     print(f'Variável global: {var_global}')
