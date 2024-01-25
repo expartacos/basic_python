@@ -30,9 +30,31 @@
 # Sintaxe:
 # filter(função, iterável)
 
-def numeros_pares(n):
-    return n % 2 == 0
+# def numeros_pares(n):
+#     return n % 2 == 0
 
-num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-pares = list(filter(numeros_pares, num))
-print(pares)
+# num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# pares = list(filter(numeros_pares, num))
+# print(pares)
+
+# num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# num_impar = list(filter(lambda x: x% 2 != 0, num))
+# print(num_impar)
+
+# Função reduce()
+# Sintaxe:
+# reduce(função, sequência, valor_inicial)
+
+from functools import reduce
+
+# def mult(x, y):
+#     return x * y
+# num = [1, 2, 3, 4, 5, 6]
+# total = reduce(mult, num)
+# print(total)
+
+# Soma cumulativa dos quadrados de valores usando expressção lambda 
+
+num = [1, 2, 3, 4]
+total = reduce(lambda x, y: x**2 + y**2, num)
+print(total)
