@@ -17,6 +17,22 @@
 # Sintaxe:
 # map(função, iterável)
 
+# num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# dobro = list(map(lambda x: x*2, num))
+# print(dobro)
+
+# Função de ordem superir a map() 
+# palavras = ['python', 'é', 'uma']
+# maiúsculas = list(map(str.upper, palavras))
+# print(maiúsculas)
+
+# Função filter()
+# Sintaxe:
+# filter(função, iterável)
+
+def numeros_pares(n):
+    return n % 2 == 0
+
 num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-dobro = list(map(lambda x: x*2, num))
-print(dobro)
+pares = list(filter(numeros_pares, num))
+print(pares)
