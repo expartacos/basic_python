@@ -4,15 +4,26 @@
 def div(k, j):
     return round(k/j, 2)
 
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite um número: '))
+if __name__ == '__main__':
+    while True:
+        try:
+            n1 = int(input('Digite um número: '))
+            n2 = int(input('Digite um número: '))
+            break
+        except ValueError:
+            print(f'Ocorreu um erro ao ler o valor. tente novamente. ')
+    try:
+        r = div(n1, n2)
+    except ZeroDivisionError:
+        print('Erro: divisão por zero')
+    except:
+        print('Ocorreu um erro desconhecido ')
+    else:
+        print(f'Resultado: {r}')
+    finally:
+        print(f'\n Fim do programa')
 
-try:
-    r = round(n1/n2, 2)
-except ZeroDivisionError:
-    print('Erro: divisão por zero')
-else:
-    print(f'Resultado: {r}')
+
 
 
 
