@@ -5,7 +5,7 @@
 notas = [5,7,8,9]
 notas2 = [10,9,8,7,6,5,4,3,2,1]
 valores = notas2 + notas
-
+print(valores)
 # print(valores[-3])
 # print(valores[5:5])
 # print(len(valores))
